@@ -11,17 +11,24 @@ protocol ViewControllerSutulDelegat: AnyObject {
     func textSutul(text: String)
 }
 
-class ViewControllerSutul: UIViewController {
+class ViewControllerSutul: UIViewController, ViewControllerDogEndDelegat, ViewControllerSutulDelegat {
+    func textSutul(text: String) {
+        label.text = "куда пошёл?!"
+    }
+    
+    func textEnd(text: String) {
+        label.text = "Ну как то так "
+    }
     
 
     @IBOutlet private weak var label: UILabel!
     
     var text = ""
-    weak var delegate : ViewControllerSutul?
+    weak var delegate : ViewControllerSutulDelegat?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        label.text = text
     }
     
     @IBAction func buttonSutulBack(_ sender: Any) {
@@ -29,6 +36,13 @@ class ViewControllerSutul: UIViewController {
         delegate?.textSutul(text: "и дал свободу выбора ")
     }
     
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToEndVC" {
+            if let destVc = segue.destination as? ViewControllerSutul {
+                destVc.text = "вжууууух?"
+                destVc.delegate = self
+            }
+        }
+    }
 }
 

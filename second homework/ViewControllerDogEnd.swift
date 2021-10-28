@@ -7,31 +7,31 @@
 
 import UIKit
 
-class ViewControllerDogEnd: UIViewController {
+protocol ViewControllerDogEndDelegat: AnyObject {
+    func textEnd(text: String)
+}
+
+class ViewControllerDogEnd: UIViewController, ViewControllerSutulDelegat {
+    func textSutul(text: String) {
+        label.text = "куда пошёл?!"
+    }
     
     
-    @IBOutlet private weak var labelEndDog: UILabel!
     
+    @IBOutlet private weak var label: UILabel!
+    
+    var text = ""
+    weak var delegate : ViewControllerDogEndDelegat?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        label.text = text
     }
     
     @IBAction private func backToRootDog(_ sender: UIButton) {
         navigationController?.popToRootViewController(animated: true)
+        delegate?.textEnd(text: "продолжим бродить?")
     }
     
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

@@ -7,15 +7,24 @@
 
 import UIKit
 
-class ViewController: UIViewController, ViewControllerSutulDelegat {
+class ViewController: UIViewController, ViewControllerSutulDelegat, ViewControllerMimiDelegat, ViewControllerDogEndDelegat {
     
-
+    
+    
     @IBOutlet weak var label: UILabel!
     
     func textSutul(text: String) {
         label.text = ("Сутулый передал привет... \(text)")
     }
-       
+      
+    func textMimi(text: String) {
+        label.text = ("Не бойся... \(text)")
+    }
+    
+    func textEnd(text: String) {
+        label.text = ("Какие планы?  \(text)")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -23,9 +32,16 @@ class ViewController: UIViewController, ViewControllerSutulDelegat {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goSutulVC" {
-            if let destVc = segue.identifier as? ViewControllerSutul {
-                destVc.text = "Хммм...меня терзнают смутные сомнения. Не хочешь сделать выбор заново?"
+            if let destVc = segue.destination as? ViewControllerSutul {
+                destVc.text = "Хммм...меня терзнают смутные сомнения. Не хочешь сделать обдуманный выбор?"
                 destVc.delegate = self
+            }
+        }
+        
+        if segue.identifier == "goMimiVC"  {
+            if let destVc = segue.destination as? ViewControllerMimi {
+                    destVc.text = "Хороооош! Пошёл мимими путём)"
+                    destVc.delegate = self
             }
         }
     }

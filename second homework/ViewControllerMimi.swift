@@ -7,21 +7,39 @@
 
 import UIKit
 
-class ViewControllerMimi: UIViewController {
-    
-    
+protocol ViewControllerMimiDelegat: AnyObject {
+    func textMimi(text: String)
+}
 
-    @IBOutlet private weak var labelMimi: UILabel!
+class ViewControllerMimi: UIViewController, ViewControllerSutulDelegat {
+    func textSutul(text: String) {
+        label.text = "вжуууухххх...\(text)"
+    }
+    
+    
+    
+    @IBOutlet private weak var label: UILabel!
+    
+    var text = ""
+    weak var delegate : ViewControllerMimiDelegat?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    
-    @IBAction func buttonMimi(_ sender: UIButton) {
-        
+        label.text = text
     }
     
+    @IBAction func buttonMimiBack(_ sender: Any) {
+        navigationController?.popToRootViewController(animated: true)
+        delegate?.textMimi(text: "гоу продолжим")
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goMimiSutul" {
+            if let destVc = segue.destination as? ViewControllerSutul {
+                destVc.text = "вжууууух?"
+                destVc.delegate = self
+            }
+        }
+    }
 }
+
