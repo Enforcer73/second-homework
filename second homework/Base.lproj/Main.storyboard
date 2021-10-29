@@ -129,10 +129,10 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Wx-iU-9p2">
-                                <rect key="frame" x="132" y="758" width="150" height="40"/>
+                                <rect key="frame" x="127" y="758" width="160" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="8t7-75-uUi"/>
-                                    <constraint firstAttribute="width" constant="150" id="VcB-oc-1dh"/>
+                                    <constraint firstAttribute="width" constant="160" id="VcB-oc-1dh"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" image="arrowshape.zigzag.right.fill" catalog="system" title="Continue"/>
@@ -141,13 +141,13 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBH-ai-hKn">
-                                <rect key="frame" x="132" y="560" width="150" height="40"/>
+                                <rect key="frame" x="127" y="560" width="160" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="1iG-Do-gKm"/>
+                                    <constraint firstAttribute="width" constant="160" id="1iG-Do-gKm"/>
                                     <constraint firstAttribute="height" constant="40" id="AXI-ak-F5Q"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" image="arrow.uturn.left.circle.badge.ellipsis" catalog="system" title="Передумать"/>
+                                <buttonConfiguration key="configuration" style="filled" image="person.fill.questionmark" catalog="system" title="Передумать"/>
                                 <connections>
                                     <action selector="buttonSutulBack:" destination="QKt-YV-ycm" eventType="touchUpInside" id="WlL-yc-68C"/>
                                 </connections>
@@ -199,13 +199,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P1Y-M8-BsB">
-                                <rect key="frame" x="132" y="763" width="150" height="40"/>
+                                <rect key="frame" x="127" y="763" width="160" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="IwJ-3O-hve"/>
+                                    <constraint firstAttribute="width" constant="160" id="IwJ-3O-hve"/>
                                     <constraint firstAttribute="height" constant="40" id="L0k-iF-DDt"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" image="arrowshape.zigzag.right.fill" catalog="system" title="Continue"/>
+                                <buttonConfiguration key="configuration" style="filled" image="arrowshape.zigzag.right.fill" catalog="system" title="Продолжить"/>
                                 <connections>
                                     <segue destination="QKt-YV-ycm" kind="show" identifier="goMimiSutul" id="yqr-A3-g4t"/>
                                 </connections>
@@ -218,13 +218,13 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PGG-gW-jDZ">
-                                <rect key="frame" x="132" y="565" width="150" height="40"/>
+                                <rect key="frame" x="127" y="565" width="160" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="0fH-CR-Ghp"/>
-                                    <constraint firstAttribute="width" constant="150" id="QyN-3q-MDc"/>
+                                    <constraint firstAttribute="width" constant="160" id="QyN-3q-MDc"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" image="arrow.uturn.left.circle.badge.ellipsis" catalog="system" title="Передумать"/>
+                                <buttonConfiguration key="configuration" style="filled" image="person.fill.questionmark" catalog="system" title="Передумать"/>
                                 <connections>
                                     <action selector="buttonMimiBack:" destination="tc1-yp-rBy" eventType="touchUpInside" id="Y2s-em-DZf"/>
                                 </connections>
@@ -270,7 +270,7 @@
             <objects>
                 <viewController id="PAh-EZ-77U" customClass="ViewControllerDogEnd" customModule="second_homework" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="36C-34-Iiq">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fon" translatesAutoresizingMaskIntoConstraints="NO" id="MXh-Tl-Qxs">
@@ -284,13 +284,13 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGp-QX-vsd">
-                                <rect key="frame" x="132" y="758" width="150" height="40"/>
+                                <rect key="frame" x="127" y="758" width="160" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="3lI-OJ-u6w"/>
-                                    <constraint firstAttribute="width" constant="150" id="9d3-of-kPh"/>
+                                    <constraint firstAttribute="width" constant="160" id="9d3-of-kPh"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" image="rectangle.portrait.and.arrow.right" catalog="system" title="в нвчвло"/>
+                                <buttonConfiguration key="configuration" style="filled" image="arrowshape.turn.up.left.2.fill" catalog="system" title="В начало"/>
                                 <connections>
                                     <action selector="backToRootDog:" destination="PAh-EZ-77U" eventType="touchUpInside" id="eWK-3B-X9b"/>
                                 </connections>
@@ -302,13 +302,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h5F-MH-wSQ">
-                                <rect key="frame" x="132" y="560" width="150" height="40"/>
+                                <rect key="frame" x="127" y="560" width="160" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="HsQ-HZ-9Du"/>
-                                    <constraint firstAttribute="width" constant="150" id="gcV-cI-kE7"/>
+                                    <constraint firstAttribute="width" constant="160" id="gcV-cI-kE7"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" image="arrowshape.turn.up.left.2.fill" catalog="system" title="к Сутулу"/>
+                                <buttonConfiguration key="configuration" style="filled" image="arrowshape.turn.up.left.2.fill" catalog="system" title="К Сутулу"/>
                                 <connections>
                                     <segue destination="QKt-YV-ycm" kind="show" identifier="backSutulVC" id="ivn-w2-7RX"/>
                                 </connections>
@@ -402,13 +402,13 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pp3-9R-CQs">
-                                <rect key="frame" x="132" y="763" width="150" height="40"/>
+                                <rect key="frame" x="127" y="763" width="160" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="D17-8I-3og"/>
-                                    <constraint firstAttribute="width" constant="150" id="NuU-7i-rg4"/>
+                                    <constraint firstAttribute="width" constant="160" id="NuU-7i-rg4"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" image="arrowshape.zigzag.forward.fill" catalog="system" title="Continue"/>
+                                <buttonConfiguration key="configuration" style="filled" image="arrowshape.zigzag.forward.fill" catalog="system" title="Продолжить"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="25"/>
@@ -419,13 +419,13 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mX-U8-DPj">
-                                <rect key="frame" x="132" y="565" width="150" height="40"/>
+                                <rect key="frame" x="127" y="565" width="160" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="nNu-Qx-S7a"/>
+                                    <constraint firstAttribute="width" constant="160" id="nNu-Qx-S7a"/>
                                     <constraint firstAttribute="height" constant="40" id="yy1-5v-rv5"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" image="arrow.uturn.left.circle.badge.ellipsis" catalog="system" title="Передумать"/>
+                                <buttonConfiguration key="configuration" style="filled" image="person.fill.questionmark" catalog="system" title="Передумать"/>
                                 <connections>
                                     <action selector="backDevInCat:" destination="Fes-ED-62x" eventType="touchUpInside" id="6Ha-lB-oLg"/>
                                 </connections>
@@ -486,25 +486,25 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UxQ-xK-BhR">
-                                <rect key="frame" x="132" y="763" width="150" height="40"/>
+                                <rect key="frame" x="127" y="763" width="160" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="npI-uV-GTZ"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="wMv-qT-5Q4"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="wMv-qT-5Q4"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" image="arrowshape.zigzag.forward.fill" catalog="system" title="Continue"/>
+                                <buttonConfiguration key="configuration" style="filled" image="arrowshape.zigzag.forward.fill" catalog="system" title="Продолжить"/>
                                 <connections>
                                     <segue destination="GcR-yH-bDd" kind="show" identifier="goSapogEndVC" id="hAR-KS-bEq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJr-pm-4Jc">
-                                <rect key="frame" x="132" y="565" width="150" height="40"/>
+                                <rect key="frame" x="127" y="565" width="160" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="2PS-vO-U96"/>
-                                    <constraint firstAttribute="width" constant="150" id="hxg-BS-E57"/>
+                                    <constraint firstAttribute="width" constant="160" id="hxg-BS-E57"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" image="arrow.uturn.left.circle.badge.ellipsis" catalog="system" title="Передумать"/>
+                                <buttonConfiguration key="configuration" style="filled" image="person.fill.questionmark" catalog="system" title="Передумать"/>
                                 <connections>
                                     <action selector="buttonBackSapog:" destination="fe4-CO-Pcb" eventType="touchUpInside" id="5xK-M8-Ygp"/>
                                 </connections>
@@ -556,16 +556,23 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fon" translatesAutoresizingMaskIntoConstraints="NO" id="LjN-YH-kW6">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="koty-sfinks-serditye-4" translatesAutoresizingMaskIntoConstraints="NO" id="9kf-ce-rSm">
+                                <rect key="frame" x="132" y="373" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="CjG-g3-gZR"/>
+                                    <constraint firstAttribute="height" constant="150" id="o8O-bq-BtO"/>
+                                </constraints>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4h-gw-Am4">
-                                <rect key="frame" x="132" y="763" width="150" height="40"/>
+                                <rect key="frame" x="127" y="763" width="160" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="CTi-s7-BGs"/>
-                                    <constraint firstAttribute="width" constant="150" id="tXH-3T-2W3"/>
+                                    <constraint firstAttribute="width" constant="160" id="tXH-3T-2W3"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" image="rectangle.portrait.and.arrow.right" catalog="system" title="Back to start"/>
+                                <buttonConfiguration key="configuration" style="filled" image="arrowshape.turn.up.left.2.fill" catalog="system" title="В начало"/>
                                 <connections>
-                                    <action selector="backToRoot:" destination="GcR-yH-bDd" eventType="touchUpInside" id="Ag4-dq-eeI"/>
+                                    <action selector="backToRootCat:" destination="GcR-yH-bDd" eventType="touchUpInside" id="7Ur-bK-zH3"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Awr-QI-OR2">
@@ -574,13 +581,6 @@
                                 <color key="textColor" systemColor="systemPinkColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="koty-sfinks-serditye-4" translatesAutoresizingMaskIntoConstraints="NO" id="9kf-ce-rSm">
-                                <rect key="frame" x="132" y="373" width="150" height="150"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="CjG-g3-gZR"/>
-                                    <constraint firstAttribute="height" constant="150" id="o8O-bq-BtO"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dHF-gc-jjb"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
@@ -655,18 +655,18 @@
                                     <constraint firstItem="XFh-MQ-u5t" firstAttribute="width" secondItem="cB8-Aw-Osw" secondAttribute="width" multiplier="1.4" id="fdm-RE-COb"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выбери животное в таб баре за которое хочешь пойти тест..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hmF-hJ-J2r">
-                                <rect key="frame" x="10" y="740" width="394" height="48"/>
-                                <color key="backgroundColor" systemColor="systemGray4Color"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" systemColor="systemBlueColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Что хочешь съесть?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Eu-P7-R3y">
                                 <rect key="frame" x="94.5" y="533" width="225.5" height="30"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выбери животное в таб баре за которое хочешь пойти тест..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hmF-hJ-J2r">
+                                <rect key="frame" x="10" y="740" width="394" height="48"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" systemColor="systemBlueColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdA-Pb-Cj4">
@@ -730,11 +730,11 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="hAR-KS-bEq"/>
+        <segue reference="L3l-aB-fy3"/>
         <segue reference="ivn-w2-7RX"/>
     </inferredMetricsTieBreakers>
+    <color key="tintColor" systemColor="systemIndigoColor"/>
     <resources>
-        <image name="arrow.uturn.left.circle.badge.ellipsis" catalog="system" width="128" height="113"/>
         <image name="arrowshape.turn.up.left.2.fill" catalog="system" width="128" height="86"/>
         <image name="arrowshape.zigzag.forward.fill" catalog="system" width="128" height="93"/>
         <image name="arrowshape.zigzag.right.fill" catalog="system" width="128" height="93"/>
@@ -748,6 +748,7 @@
         <image name="fon" width="375" height="812"/>
         <image name="koty-sfinks-serditye-4" width="118.5" height="107.5"/>
         <image name="pedi" width="60" height="60"/>
+        <image name="person.fill.questionmark" catalog="system" width="128" height="104"/>
         <image name="rectangle.portrait.and.arrow.right" catalog="system" width="128" height="108"/>
         <image name="rectangle.portrait.and.arrow.right.fill" catalog="system" width="128" height="108"/>
         <image name="sobaka-sutulaya" width="133" height="133"/>
@@ -761,6 +762,9 @@
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

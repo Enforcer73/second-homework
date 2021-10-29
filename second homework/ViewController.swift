@@ -23,14 +23,14 @@ class ViewController: UIViewController, ViewControllerSutulDelegat, ViewControll
     }
     
     func textEndDog(text: String) {
-        label.text = "Какие планы?  \(text)"
+        label.text = ""
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goSutulVC" {
             if let destVc = segue.destination as? ViewControllerSutul {

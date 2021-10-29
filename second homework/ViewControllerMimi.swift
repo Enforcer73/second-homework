@@ -17,7 +17,7 @@ class ViewControllerMimi: UIViewController, ViewControllerSutulDelegat {
     @IBOutlet private weak var label: UILabel!
     
     func textSutul(text: String) {
-        label.text = "вжуууухххх...\(text)"
+        label.text = ""
     }
     
     var text = ""
@@ -30,7 +30,7 @@ class ViewControllerMimi: UIViewController, ViewControllerSutulDelegat {
     
     @IBAction private func buttonMimiBack(_ sender: Any) {
         navigationController?.popToRootViewController(animated: true)
-        delegate?.textMimi(text: "гоу продолжим")
+        delegate?.textMimi(text: "Go продолжим")
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

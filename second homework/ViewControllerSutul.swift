@@ -18,11 +18,11 @@ class ViewControllerSutul: UIViewController, ViewControllerDogEndDelegat, ViewCo
     @IBOutlet private weak var label: UILabel!
     
     func textSutul(text: String) {
-        label.text = "\(text)куда пошёл?!"
+        label.text = ""
     }
     
     func textEndDog(text: String) {
-        label.text = "Ну как то так \(text)"
+        label.text = ""
     }
     
     var text = ""

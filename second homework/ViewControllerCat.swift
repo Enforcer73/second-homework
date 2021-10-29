@@ -13,7 +13,7 @@ class ViewControllerCat: UIViewController, ViewControllerDevilDelegat, ViewContr
     @IBOutlet private weak var label: UILabel!
     
     func textSapog(text: String) {
-        label.text = "Сорян...\nно я смог \(text)"
+        label.text = "Упс...\nно я смог \(text)"
     }
     
     func textDevil(text: String) {
@@ -21,7 +21,7 @@ class ViewControllerCat: UIViewController, ViewControllerDevilDelegat, ViewContr
     }
     
     func textEndCat(text: String) {
-        label.text = "Оо! Хабар из джайла... \(text)"
+        label.text = ""
     }
     
     override func viewDidLoad() {

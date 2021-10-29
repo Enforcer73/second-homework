@@ -35,9 +35,8 @@ class ViewControllerCatEnd: UIViewController, ViewControllerDevilDelegat, ViewCo
         label.text = text
     }
     
-    @IBAction private func backToRoot(_ sender: Any) {
+    @IBAction private func backToRootCat(_ sender: Any) {
         navigationController?.popToRootViewController(animated: true)
-        delegate?.textEndCat(text: "хехе")
     }
     
     

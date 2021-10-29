@@ -12,18 +12,20 @@ protocol ViewControllerDogEndDelegat: AnyObject {
 }
 
 class ViewControllerDogEnd: UIViewController, ViewControllerSutulDelegat, ViewControllerDogEndDelegat {
-    func textEndDog(text: String) {
-        label.text = "чуу"
-    }
     
-    func textSutul(text: String) {
-        label.text = "куда пошёл?!"
-    }
 
     @IBOutlet private weak var label: UILabel!
     
     var text = ""
     weak var delegate : ViewControllerDogEndDelegat?
+    
+    func textEndDog(text: String) {
+        label.text = ""
+    }
+    
+    func textSutul(text: String) {
+        label.text = ""
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +34,6 @@ class ViewControllerDogEnd: UIViewController, ViewControllerSutulDelegat, ViewCo
     
     @IBAction private func backToRootDog(_ sender: UIButton) {
         navigationController?.popToRootViewController(animated: true)
-        delegate?.textEndDog(text: " продолжим бродить?")
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
