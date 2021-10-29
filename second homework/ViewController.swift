@@ -11,7 +11,7 @@ class ViewController: UIViewController, ViewControllerSutulDelegat, ViewControll
     
     
     
-    @IBOutlet weak var label: UILabel!
+    @IBOutlet private weak var label: UILabel!
     
     func textSutul(text: String) {
         label.text = ("Сутулый передал привет... \(text)")

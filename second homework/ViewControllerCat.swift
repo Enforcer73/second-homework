@@ -7,11 +7,14 @@
 
 import UIKit
 
-class ViewControllerCat: UIViewController {
+class ViewControllerCat: UIViewController, ViewControllerDevilDelegat {
     
   
+    @IBOutlet weak var label: UILabel!
     
-    
+    func textDevil(text: String) {
+        label.text = ("И снова здавствуйте... \(text)")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +22,14 @@ class ViewControllerCat: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToDevVC" {
+            if let destVC = segue.destination as? ViewControllerDevil {
+                destVC.text = "...это ЧОРД"
+                destVC.self
+            }
+        }
+    }
 
 }
+

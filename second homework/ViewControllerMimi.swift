@@ -12,13 +12,13 @@ protocol ViewControllerMimiDelegat: AnyObject {
 }
 
 class ViewControllerMimi: UIViewController, ViewControllerSutulDelegat {
+    
+  
+    @IBOutlet private weak var label: UILabel!
+    
     func textSutul(text: String) {
         label.text = "вжуууухххх...\(text)"
     }
-    
-    
-    
-    @IBOutlet private weak var label: UILabel!
     
     var text = ""
     weak var delegate : ViewControllerMimiDelegat?
@@ -28,7 +28,7 @@ class ViewControllerMimi: UIViewController, ViewControllerSutulDelegat {
         label.text = text
     }
     
-    @IBAction func buttonMimiBack(_ sender: Any) {
+    @IBAction private func buttonMimiBack(_ sender: Any) {
         navigationController?.popToRootViewController(animated: true)
         delegate?.textMimi(text: "гоу продолжим")
     }
@@ -36,7 +36,7 @@ class ViewControllerMimi: UIViewController, ViewControllerSutulDelegat {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goMimiSutul" {
             if let destVc = segue.destination as? ViewControllerSutul {
-                destVc.text = "вжууууух?"
+                destVc.text = "не ждан? ...мир полон сюрпризов"
                 destVc.delegate = self
             }
         }

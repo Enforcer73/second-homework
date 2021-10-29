@@ -12,6 +12,11 @@ protocol ViewControllerSutulDelegat: AnyObject {
 }
 
 class ViewControllerSutul: UIViewController, ViewControllerDogEndDelegat, ViewControllerSutulDelegat {
+    
+    
+
+    @IBOutlet private weak var label: UILabel!
+    
     func textSutul(text: String) {
         label.text = "куда пошёл?!"
     }
@@ -19,9 +24,6 @@ class ViewControllerSutul: UIViewController, ViewControllerDogEndDelegat, ViewCo
     func textEnd(text: String) {
         label.text = "Ну как то так "
     }
-    
-
-    @IBOutlet private weak var label: UILabel!
     
     var text = ""
     weak var delegate : ViewControllerSutulDelegat?
@@ -38,7 +40,7 @@ class ViewControllerSutul: UIViewController, ViewControllerDogEndDelegat, ViewCo
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToEndVC" {
-            if let destVc = segue.destination as? ViewControllerSutul {
+            if let destVc = segue.destination as? ViewControllerDogEnd {
                 destVc.text = "вжууууух?"
                 destVc.delegate = self
             }

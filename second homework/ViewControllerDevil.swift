@@ -7,26 +7,21 @@
 
 import UIKit
 
+protocol ViewControllerDevilDelegat: AnyObject {
+    func textDevil(text: String)
+}
+
 class ViewControllerDevil: UIViewController {
     
     
-    @IBOutlet private weak var labelDevil: UILabel!
+    @IBOutlet private weak var label: UILabel!
+    
+    var text = ""
+    weak var delegate: ViewControllerDevilDelegat?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        label.text = text
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
