@@ -36,7 +36,7 @@ class ViewControllerMimi: UIViewController, ViewControllerSutulDelegat {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goMimiSutul" {
             if let destVc = segue.destination as? ViewControllerSutul {
-                destVc.text = "не ждан? ...мир полон сюрпризов"
+                destVc.text = "не ждан?!\nвоистину...мир полон сюрпризов"
                 destVc.delegate = self
             }
         }

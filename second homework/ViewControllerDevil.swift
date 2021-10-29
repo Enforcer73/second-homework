@@ -34,13 +34,13 @@ class ViewControllerDevil: UIViewController, ViewControllerDevilDelegat, ViewCon
 
     @IBAction func backDevInCat(_ sender: Any) {
         navigationController?.popToRootViewController(animated: true)
-        delegate?.textDevil(text: "я вернулся в cтрашном сне")
+        delegate?.textDevil(text: "я вернулся из cтрашного сна")
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToEndCatVC" {
             if let destVC = segue.destination as? ViewControllerCatEnd {
-                destVC.text = "...ну а ты чего ожидал??? думал тут пантера?)))"
+                destVC.text = "...ну а ты чего ожидал???\nдумал тут пантера\nв\nчёрном \"панамера\"?)))"
                 destVC.delegate = self
             }
         }

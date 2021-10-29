@@ -13,11 +13,11 @@ class ViewControllerCat: UIViewController, ViewControllerDevilDelegat, ViewContr
     @IBOutlet private weak var label: UILabel!
     
     func textSapog(text: String) {
-        label.text = "Сорян...но я смог \(text)"
+        label.text = "Сорян...\nно я смог \(text)"
     }
     
     func textDevil(text: String) {
-        label.text = "И снова здавствуйте... \(text)"
+        label.text = "И снова здавствуйте...\n \(text)"
     }
     
     func textEndCat(text: String) {
@@ -33,14 +33,14 @@ class ViewControllerCat: UIViewController, ViewControllerDevilDelegat, ViewContr
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToDevVC" {
             if let destVC = segue.destination as? ViewControllerDevil {
-                destVC.text = "...это ЧОРД"
+                destVC.text = "...этот кошак ЧОРД!\nЯ бы одумался..."
                 destVC.delegate = self
             }
         }
         
         if segue.identifier == "goToSapogVC" {
             if let destVC = segue.destination as? ViewControllerSapog {
-                destVC.text = "придётся как то избежать слёз..."
+                destVC.text = "Слезами выбор не изменить!\nТак что решайся \"Продолжить\"\nили\n\"Передумал\" ?"
                 destVC.delegate = self
             }
         }

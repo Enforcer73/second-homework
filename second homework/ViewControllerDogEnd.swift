@@ -38,7 +38,7 @@ class ViewControllerDogEnd: UIViewController, ViewControllerSutulDelegat, ViewCo
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "backSutulVC" {
             if let destVC = segue.destination as? ViewControllerSutul {
-                destVC.text = "чел создан для мучений ;)"
+                destVC.text = "человек создан, что бы познавать\nи\nудивлятся 🎉 а остальное тлен"
                 destVC.delegate = self
             }
         }

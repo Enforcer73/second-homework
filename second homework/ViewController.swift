@@ -34,14 +34,14 @@ class ViewController: UIViewController, ViewControllerSutulDelegat, ViewControll
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goSutulVC" {
             if let destVc = segue.destination as? ViewControllerSutul {
-                destVc.text = "Хммм...меня терзнают смутные сомнения. Не хочешь сделать обдуманный выбор?"
+                destVc.text = "Хммм...\nменя терзнают смутные сомнения.\nНе хочешь сделать обдуманный выбор?"
                 destVc.delegate = self
             }
         }
         
         if segue.identifier == "goMimiVC"  {
             if let destVc = segue.destination as? ViewControllerMimi {
-                    destVc.text = "Хороооош! Пошёл мими путём)"
+                    destVc.text = "Хороооош!\nПошёл мими путём)"
                     destVc.delegate = self
             }
         }

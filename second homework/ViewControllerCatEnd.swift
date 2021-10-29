@@ -11,7 +11,7 @@ protocol ViewControllerCatEndDelegat: AnyObject {
     func textEndCat(text: String)
 }
 
-class ViewControllerCatEnd: UIViewController, ViewControllerDevilDelegat, ViewControllerCatEndDelegat {
+class ViewControllerCatEnd: UIViewController, ViewControllerDevilDelegat, ViewControllerCatEndDelegat, ViewControllerSapogDelegat {
     
     
     @IBOutlet private weak var label: UILabel!
@@ -26,7 +26,9 @@ class ViewControllerCatEnd: UIViewController, ViewControllerDevilDelegat, ViewCo
         label.text = ""
     }
     
-    
+    func textSapog(text: String) {
+        label.text = ""
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +39,7 @@ class ViewControllerCatEnd: UIViewController, ViewControllerDevilDelegat, ViewCo
         navigationController?.popToRootViewController(animated: true)
         delegate?.textEndCat(text: "хехе")
     }
+    
     
 
 }
