@@ -7,19 +7,35 @@
 
 import UIKit
 
-class ViewControllerCatEnd: UIViewController {
+protocol ViewControllerCatEndDelegat: AnyObject {
+    func textEndCat(text: String)
+}
+
+class ViewControllerCatEnd: UIViewController, ViewControllerDevilDelegat, ViewControllerCatEndDelegat {
     
     
     @IBOutlet private weak var label: UILabel!
     
+    var text = ""
+    weak var delegate: ViewControllerCatEndDelegat?
+    
+    func textDevil(text: String) {
+        label.text = ""
+    }
+    func textEndCat(text: String) {
+        label.text = ""
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        label.text = text
     }
     
     @IBAction private func backToRoot(_ sender: Any) {
         navigationController?.popToRootViewController(animated: true)
+        delegate?.textEndCat(text: "хехе")
     }
     
 

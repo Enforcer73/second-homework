@@ -18,11 +18,11 @@ class ViewControllerSutul: UIViewController, ViewControllerDogEndDelegat, ViewCo
     @IBOutlet private weak var label: UILabel!
     
     func textSutul(text: String) {
-        label.text = "куда пошёл?!"
+        label.text = "\(text)куда пошёл?!"
     }
     
-    func textEnd(text: String) {
-        label.text = "Ну как то так "
+    func textEndDog(text: String) {
+        label.text = "Ну как то так \(text)"
     }
     
     var text = ""
@@ -41,7 +41,7 @@ class ViewControllerSutul: UIViewController, ViewControllerDogEndDelegat, ViewCo
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToEndVC" {
             if let destVc = segue.destination as? ViewControllerDogEnd {
-                destVc.text = "вжууууух?"
+                destVc.text = "это наш вид, что мы заслуживаем..."
                 destVc.delegate = self
             }
         }

@@ -8,11 +8,11 @@
 import UIKit
 
 protocol ViewControllerDogEndDelegat: AnyObject {
-    func textEnd(text: String)
+    func textEndDog(text: String)
 }
 
 class ViewControllerDogEnd: UIViewController, ViewControllerSutulDelegat, ViewControllerDogEndDelegat {
-    func textEnd(text: String) {
+    func textEndDog(text: String) {
         label.text = "чуу"
     }
     
@@ -32,7 +32,7 @@ class ViewControllerDogEnd: UIViewController, ViewControllerSutulDelegat, ViewCo
     
     @IBAction private func backToRootDog(_ sender: UIButton) {
         navigationController?.popToRootViewController(animated: true)
-        delegate?.textEnd(text: " продолжим бродить?")
+        delegate?.textEndDog(text: " продолжим бродить?")
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

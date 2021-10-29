@@ -13,16 +13,17 @@ class ViewController: UIViewController, ViewControllerSutulDelegat, ViewControll
     
     @IBOutlet private weak var label: UILabel!
     
+    
     func textSutul(text: String) {
-        label.text = ("Сутулый передал привет... \(text)")
+        label.text = "Сутулый передал привет... \(text)"
     }
       
     func textMimi(text: String) {
-        label.text = ("Не бойся... \(text)")
+        label.text = "Не бойся... \(text)"
     }
     
-    func textEnd(text: String) {
-        label.text = ("Какие планы?  \(text)")
+    func textEndDog(text: String) {
+        label.text = "Какие планы?  \(text)"
     }
     
     override func viewDidLoad() {
@@ -40,7 +41,7 @@ class ViewController: UIViewController, ViewControllerSutulDelegat, ViewControll
         
         if segue.identifier == "goMimiVC"  {
             if let destVc = segue.destination as? ViewControllerMimi {
-                    destVc.text = "Хороооош! Пошёл мимими путём)"
+                    destVc.text = "Хороооош! Пошёл мими путём)"
                     destVc.delegate = self
             }
         }

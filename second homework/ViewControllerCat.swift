@@ -7,18 +7,26 @@
 
 import UIKit
 
-class ViewControllerCat: UIViewController, ViewControllerDevilDelegat {
+class ViewControllerCat: UIViewController, ViewControllerDevilDelegat, ViewControllerCatEndDelegat, ViewControllerSapogDelegat {
     
   
-    @IBOutlet weak var label: UILabel!
+    @IBOutlet private weak var label: UILabel!
+    
+    func textSapog(text: String) {
+        label.text = "Сорян...но я смог \(text)"
+    }
     
     func textDevil(text: String) {
-        label.text = ("И снова здавствуйте... \(text)")
+        label.text = "И снова здавствуйте... \(text)"
+    }
+    
+    func textEndCat(text: String) {
+        label.text = "Оо! Хабар из джайла... \(text)"
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     
@@ -26,7 +34,14 @@ class ViewControllerCat: UIViewController, ViewControllerDevilDelegat {
         if segue.identifier == "goToDevVC" {
             if let destVC = segue.destination as? ViewControllerDevil {
                 destVC.text = "...это ЧОРД"
-                destVC.self
+                destVC.delegate = self
+            }
+        }
+        
+        if segue.identifier == "goToSapogVC" {
+            if let destVC = segue.destination as? ViewControllerSapog {
+                destVC.text = "придётся как то избежать слёз..."
+                destVC.delegate = self
             }
         }
     }

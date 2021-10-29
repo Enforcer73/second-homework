@@ -7,14 +7,29 @@
 
 import UIKit
 
-class ViewControllerSapog: UIViewController {
+protocol ViewControllerSapogDelegat: AnyObject {
+    func textSapog(text: String)
+}
+
+class ViewControllerSapog: UIViewController, ViewControllerSapogDelegat {
         
     @IBOutlet private weak var label: UILabel!
     
+    func textSapog(text: String) {
+        label.text = "Сапог \(text)"
+    }
+    
+    var text = ""
+    weak var delegate : ViewControllerSapogDelegat?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        label.text = text
+    }
+    
+    @IBAction func buttonBackSapog(_ sender: Any) {
+        navigationController?.popToRootViewController(animated: true)
+        delegate?.textSapog(text: " вернутся от Сапога")
     }
     
 }
