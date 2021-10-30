@@ -29,7 +29,7 @@ class ViewControllerDevil: UIViewController, ViewControllerCatEndDelegat {
         label.text = text
     }
 
-    @IBAction func backDevInCat(_ sender: Any) {
+    @IBAction private func backDevInCat(_ sender: Any) {
         navigationController?.popToRootViewController(animated: true)
         delegate?.textDevil(text: "я вернулся из cтрашного сна")
     }

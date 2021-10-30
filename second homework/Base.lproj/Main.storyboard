@@ -659,29 +659,6 @@
                                     <constraint firstAttribute="width" constant="150" id="uwk-ep-tra"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdA-Pb-Cj4">
-                                <rect key="frame" x="0.0" y="10" width="414" height="0.0"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <color key="textColor" systemColor="systemPinkColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выбери животное в таб баре за которое хочешь пойти тест..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hmF-hJ-J2r">
-                                <rect key="frame" x="10" y="291" width="394" height="48"/>
-                                <color key="backgroundColor" systemColor="systemGray4Color"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" systemColor="systemBlueColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="127" translatesAutoresizingMaskIntoConstraints="NO" id="yhY-pR-qto">
-                                <rect key="frame" x="165" y="729" width="84" height="74"/>
-                            </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Что хочешь съесть?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Eu-P7-R3y">
-                                <rect key="frame" x="94.5" y="708" width="225.5" height="30"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="130" translatesAutoresizingMaskIntoConstraints="NO" id="Czd-gm-B20">
                                 <rect key="frame" x="82" y="743" width="250" height="60"/>
                                 <subviews>
@@ -711,6 +688,26 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выбери животное в таб баре за которое хочешь пойти тест..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hmF-hJ-J2r">
+                                <rect key="frame" x="10" y="291" width="394" height="48"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" systemColor="systemBlueColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdA-Pb-Cj4">
+                                <rect key="frame" x="0.0" y="10" width="414" height="0.0"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" systemColor="systemPinkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Что хочешь съесть?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Eu-P7-R3y">
+                                <rect key="frame" x="94.5" y="708" width="225.5" height="30"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="S7m-ZN-BDE"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
@@ -729,11 +726,9 @@
                             <constraint firstItem="hmF-hJ-J2r" firstAttribute="leading" secondItem="S7m-ZN-BDE" secondAttribute="leading" constant="10" id="TEx-8Z-6QS"/>
                             <constraint firstItem="2fx-cG-eFD" firstAttribute="top" secondItem="u9T-5O-eGK" secondAttribute="top" id="WTx-YX-1Mz"/>
                             <constraint firstAttribute="trailing" secondItem="2fx-cG-eFD" secondAttribute="trailing" id="aIs-QR-eUy"/>
-                            <constraint firstItem="yhY-pR-qto" firstAttribute="centerX" secondItem="u9T-5O-eGK" secondAttribute="centerX" id="aYZ-dR-Bmj"/>
                             <constraint firstItem="2Eu-P7-R3y" firstAttribute="centerX" secondItem="u9T-5O-eGK" secondAttribute="centerX" id="b8t-qa-Dkr"/>
                             <constraint firstItem="S7m-ZN-BDE" firstAttribute="bottom" secondItem="Czd-gm-B20" secondAttribute="bottom" constant="5" id="fQa-Rq-byr"/>
                             <constraint firstItem="Yph-QL-Siv" firstAttribute="top" secondItem="hmF-hJ-J2r" secondAttribute="bottom" constant="7" id="q3o-6u-qNV"/>
-                            <constraint firstItem="S7m-ZN-BDE" firstAttribute="bottom" secondItem="yhY-pR-qto" secondAttribute="bottom" constant="5" id="tk8-bO-nki"/>
                             <constraint firstItem="tdA-Pb-Cj4" firstAttribute="top" secondItem="S7m-ZN-BDE" secondAttribute="top" constant="10" id="ybe-MY-1WI"/>
                         </constraints>
                     </view>

@@ -30,7 +30,7 @@ class ViewControllerSapog: UIViewController, ViewControllerCatEndDelegat {
         label.text = text
     }
     
-    @IBAction func buttonBackSapog(_ sender: Any) {
+    @IBAction private func buttonBackSapog(_ sender: Any) {
         navigationController?.popToRootViewController(animated: true)
         delegate?.textSapog(text: "вернутся от Сапога")
     }
