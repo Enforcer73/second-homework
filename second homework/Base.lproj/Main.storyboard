@@ -666,7 +666,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выбери животное в таб баре за которое хочешь пойти тест..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hmF-hJ-J2r">
-                                <rect key="frame" x="10" y="288" width="394" height="48"/>
+                                <rect key="frame" x="10" y="291" width="394" height="48"/>
                                 <color key="backgroundColor" systemColor="systemGray4Color"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" systemColor="systemBlueColor"/>
@@ -732,7 +732,7 @@
                             <constraint firstItem="yhY-pR-qto" firstAttribute="centerX" secondItem="u9T-5O-eGK" secondAttribute="centerX" id="aYZ-dR-Bmj"/>
                             <constraint firstItem="2Eu-P7-R3y" firstAttribute="centerX" secondItem="u9T-5O-eGK" secondAttribute="centerX" id="b8t-qa-Dkr"/>
                             <constraint firstItem="S7m-ZN-BDE" firstAttribute="bottom" secondItem="Czd-gm-B20" secondAttribute="bottom" constant="5" id="fQa-Rq-byr"/>
-                            <constraint firstItem="Yph-QL-Siv" firstAttribute="top" secondItem="hmF-hJ-J2r" secondAttribute="bottom" constant="10" id="q3o-6u-qNV"/>
+                            <constraint firstItem="Yph-QL-Siv" firstAttribute="top" secondItem="hmF-hJ-J2r" secondAttribute="bottom" constant="7" id="q3o-6u-qNV"/>
                             <constraint firstItem="S7m-ZN-BDE" firstAttribute="bottom" secondItem="yhY-pR-qto" secondAttribute="bottom" constant="5" id="tk8-bO-nki"/>
                             <constraint firstItem="tdA-Pb-Cj4" firstAttribute="top" secondItem="S7m-ZN-BDE" secondAttribute="top" constant="10" id="ybe-MY-1WI"/>
                         </constraints>
