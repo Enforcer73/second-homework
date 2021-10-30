@@ -11,21 +11,18 @@ protocol ViewControllerDevilDelegat: AnyObject {
     func textDevil(text: String)
 }
 
-class ViewControllerDevil: UIViewController, ViewControllerDevilDelegat, ViewControllerCatEndDelegat {
+class ViewControllerDevil: UIViewController, ViewControllerCatEndDelegat {
     
     
     @IBOutlet private weak var label: UILabel!
     
-    func textDevil(text: String) {
-        label.text = "dev hi \(text)"
-    }
-    
-    func textEndCat(text: String) {
-        label.text = "жлаешь поискать лучшего результат? \(text)"
-    }
-    
     var text = ""
     weak var delegate: ViewControllerDevilDelegat?
+    
+    
+    func textEndCat(text: String) {
+        label.text = ""
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,16 +34,13 @@ class ViewControllerDevil: UIViewController, ViewControllerDevilDelegat, ViewCon
         delegate?.textDevil(text: "я вернулся из cтрашного сна")
     }
     
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToEndCatVC" {
             if let destVC = segue.destination as? ViewControllerCatEnd {
-                destVC.text = "...ну а ты чего ожидал???\nдумал тут пантера\nв\nчёрном \"панамера\"?)))"
+                destVC.text = "...ну а ты чего ожидал??? думал тут пантера в чёрном \"панамера\"?)))"
                 destVC.delegate = self
             }
         }
-    }
-    
-    
-    
-    
+    }  
 }
