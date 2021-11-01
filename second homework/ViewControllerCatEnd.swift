@@ -40,6 +40,9 @@ class ViewControllerCatEnd: UIViewController, ViewControllerDevilDelegat, ViewCo
     
     @IBAction private func backToRootCat(_ sender: Any) {
         navigationController?.popToRootViewController(animated: true)
+        let name = NSNotification.Name("Final Root")
+        let data = ["root":"Вернул данные с endCatVC через NotificationCenter"]
+        NotificationCenter.default.post(name: name, object: self, userInfo: data)
     }
     
     

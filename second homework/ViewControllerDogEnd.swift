@@ -31,6 +31,9 @@ class ViewControllerDogEnd: UIViewController, ViewControllerSutulDelegat {
     
     @IBAction private func backToRootDog(_ sender: UIButton) {
         navigationController?.popToRootViewController(animated: true)
+        let name = NSNotification.Name("Final Root")
+        let data = ["root":"Вернул данные с endDogVC через NotificationCenter"]
+        NotificationCenter.default.post(name: name, object: self, userInfo: data)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

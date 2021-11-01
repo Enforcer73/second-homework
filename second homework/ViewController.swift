@@ -25,7 +25,19 @@ class ViewController: UIViewController, ViewControllerSutulDelegat, ViewControll
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        createObservers()
+    }
+    
+    func createObservers() {
+        let name = NSNotification.Name("Final Root")
+        NotificationCenter.default.addObserver(self, selector: #selector(onDidReceiveData(_:)), name: name, object: nil)
+    }
+
+    @objc func onDidReceiveData(_ notification: Notification) {
+        if let data = notification.userInfo as? [String: String] {
+            let value = data["root"]
+            label.text = value
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
